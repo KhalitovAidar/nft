@@ -1,0 +1,45 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 70px;
+    align-items: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.menuIcon {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1440px){
+    .menu {
+        display: none;
+    }
+
+    .header {
+        display: grid;
+
+        grid-template-columns: 133px 1fr 1fr;
+        margin-left: 100px;
+        margin-right: 100px;
+        justify-items: left;
+
+        gap: 10px;
+    }
+
+    .menuIcon {
+        display: flex;
+
+        justify-self: center;
+
+    }
+}
